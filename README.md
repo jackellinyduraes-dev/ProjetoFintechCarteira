@@ -1,40 +1,37 @@
 # Projeto Fintech Carteira
 
-Projeto acadêmico (FIAP - Fase 5, OOP) que simula uma **carteira de investimentos**,
-aplicando os pilares da Programação Orientada a Objetos em Java.
+Projeto acadêmico (FIAP – Fase 5, OOP) que simula uma **carteira de investimentos**, aplicando os pilares da Programação Orientada a Objetos em Java.
 
 ## Conceitos aplicados
-- **Herança**: `RendaFixa` e `RendaVariavel` herdam de `Investimento`.
-- **Polimorfismo**: `calcularRentabilidade()` e `descrever()` têm comportamento
-  próprio em cada subclasse.
-- **Encapsulamento**: atributos privados com getters/setters.
-- **Abstração**: `Investimento` é uma superclasse abstrata.
-- **Associação**: `Carteira` tem um `Cliente` e vários `Investimento`.
 
-## Estrutura
-- `src/br/com/fiap/projeto/fintech/carteira/model` — classes de domínio (Cliente, Investimento, RendaFixa, RendaVariavel, Carteira)
-- `src/br/com/fiap/projeto/fintech/carteira/view` — classe de execução (Main)
+- **Herança:** `RendaFixa` e `RendaVariavel` herdam de `Investimento`.
+- **Polimorfismo:** `calcularRentabilidade()` e `descrever()` têm comportamento próprio em cada subclasse.
+- **Encapsulamento:** atributos privados com getters/setters.
+- **Abstração:** a classe `Investimento` define um modelo genérico com os métodos essenciais, enquanto cada subclasse implementa seus próprios detalhes.
 
-## Como rodar
-Abra no IntelliJ e execute a classe `Main`. A saída mostra a descrição de cada
-investimento, a rentabilidade individual e os totais da carteira.
+## Tecnologias
 
-## Exemplo de saída
+- Java
+- Programação Orientada a Objetos (POO)
 
+## Estrutura do projeto
 
-```
-==== Carteira de Maria ====
+O código está organizado no pacote `br.com.fiap.projeto.fintech.carteira`, separando as classes de investimento e suas especializações.
 
-Renda Fixa CDB Banco X | taxa de 11.0% a.a.
-Aplicado: R$ 5000.00 | Rentabilidade: R$ 1224.14 | Total: R$ 6224.14
+## Como executar
 
-Aplicado: R$ 3000.00 | Rentabilidade: R$ 255.00 | Total: R$ 3255.00
+1. Clone o repositório:
+   ```
+   git clone https://github.com/jackellinyduraes-dev/ProjetoFintechCarteira.git
+   ```
+2. Abra o projeto na sua IDE (Eclipse, IntelliJ ou VS Code com extensão Java).
+3. Execute a classe principal (`Main`) para rodar a simulação da carteira.
 
-Rentabilidade total: R$ 1479.14
-Patrimonio total: R$ 9479.14
-```
+## Aprendizados
+
+Projeto desenvolvido durante a graduação em Análise e Desenvolvimento de Sistemas (ADS) na FIAP, consolidando a base de Programação Orientada a Objetos em Java.
 
 ## Autora
 
-Jackelliny Ramos Durães — FIAP
-
+**Jackelliny Durães** — Estudante de ADS na FIAP
+[LinkedIn](https://www.linkedin.com/in/jackellinyduraes)
